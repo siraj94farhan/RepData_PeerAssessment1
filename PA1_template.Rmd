@@ -65,7 +65,9 @@ activity_fd <-
 
 Plot a histogram based on calculated frequency distribution
 ```{r}
-ggplot(activity_fd, aes(date)) + geom_histogram(stat = "count")
+ggplot(activity_fd, aes(date)) + 
+  geom_histogram(stat = "count") +
+  labs(x = "Date", y = "Total number of steps")
 ```
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day
@@ -162,7 +164,9 @@ activity_na_replaced_fd <-
 
 Plot a histogram based on calculated frequency distribution
 ```{r}
-ggplot(activity_na_replaced_fd, aes(date)) + geom_histogram(stat = "count")
+ggplot(activity_na_replaced_fd, aes(date)) + 
+  geom_histogram(stat = "count") +
+  labs(x = "Date", y = "Total number of steps")
 ```
 
 Calculate and report the mean and median of the total number of steps taken per day

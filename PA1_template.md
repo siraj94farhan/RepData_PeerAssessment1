@@ -133,7 +133,9 @@ activity_fd <-
 Plot a histogram based on calculated frequency distribution
 
 ```r
-ggplot(activity_fd, aes(date)) + geom_histogram(stat = "count")
+ggplot(activity_fd, aes(date)) + 
+  geom_histogram(stat = "count") +
+  labs(x = "Date", y = "Total number of steps")
 ```
 
 ```
@@ -272,7 +274,9 @@ activity_na_replaced_fd <-
 Plot a histogram based on calculated frequency distribution
 
 ```r
-ggplot(activity_na_replaced_fd, aes(date)) + geom_histogram(stat = "count")
+ggplot(activity_na_replaced_fd, aes(date)) + 
+  geom_histogram(stat = "count") +
+  labs(x = "Date", y = "Total number of steps")
 ```
 
 ```
